@@ -2,9 +2,7 @@ import Button from "../components/Button";
 import { GoCheck, GoCreditCard, GoEye, GoAlert, GoFlame } from "react-icons/go";
 
 function ButtonPage() {
-  const handleClick = () => {
-    console.log("Click!!");
-  };
+  const handleClick = () => {};
   return (
     <div>
       <div>
