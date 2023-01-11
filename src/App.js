@@ -1,34 +1,7 @@
-import { useState } from "react";
-import Dropdown from "./components/Dropdown";
+import DropdownPage from "./pages/DropdownPage";
 
 function App() {
-  const [selection, setSelection] = useState(null);
-
-  const handleSelect = (option) => {
-    setSelection(option);
-  };
-
-  const options = [
-    {
-      label: "Red",
-      value: "red",
-    },
-    {
-      label: "Green",
-      value: "green",
-    },
-    {
-      label: "Blue",
-      value: "blue",
-    },
-  ];
-
-  return (
-    <div className="flex">
-      <Dropdown options={options} value={selection} onChange={handleSelect} />
-      <Dropdown options={options} value={selection} onChange={handleSelect} />
-    </div>
-  );
+  return <DropdownPage />;
 }
 
 export default App;
